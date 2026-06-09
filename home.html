@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VJCET μLearn</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="images/mulearn-vjcet-logo.png" alt="VJCET μLearn Logo">
+            </a>
+
+            <!-- Right Side Content -->
+            <div class="nav-right">
+
+                <!-- Desktop Menu -->
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+
+                <!-- Join Button -->
+                <a href="https://app.mulearn.org/register" class="join-btn">
+                    Join μLearn
+                </a>
+
+                <!-- Hamburger -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="#home" class="mobile-home">Home</a>
+
+            <div class="mobile-line"></div>
+
+            <a href="#about">About Us</a>
+            <a href="#events">Events</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#connect">Connect</a>
+
+            <a href="YOUR_JOIN_LINK_HERE" class="mobile-join">
+                Join μLearn
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                Welcome to
+                <span>μLearn VJCET</span>
+            </h1>
+
+            <p>
+                Learn • Connect • Build • Grow
+            </p>
+            <a href="https://chat.whatsapp.com/HdApp4b2ghK9tNvXsVDHcT" class="hero-btn">
+    Join Community
+</a>
+        </div>
+
+        <div class="mini-calendar">
+            <h3 class="calendar-title">Event Calendar</h3>
+    <div class="cal-header">
+        <button id="prev">&#10094;</button>
+        <span id="monthTitle"></span>
+        <button id="next">&#10095;</button>
+    </div>
+
+<div class="cal-weekdays">
+    <div>M</div>
+    <div>T</div>
+    <div>W</div>
+    <div>Th</div>
+    <div>F</div>
+    <div>S</div>
+    <div class="sunday">Su</div>
+</div>
+
+    <div class="cal-grid" id="calDays"></div>
+
+    <div class="event-box" id="eventBox">
+        <h4 id="eventTitle"></h4>
+        <p>📅 <span id="eventDateText"></span></p>
+        <a href="#events" class="go-btn">Go To Event</a>
+    </div>
+</div>
+
+</div>
+
+    </section>
+
+    <!-- UPCOMING EVENTS SECTION -->
+<section class="upcoming-events" id="events">
+
+    <div class="events-container">
+
+        <h2>Upcoming Events</h2>
+
+        <div class="event-card">
+
+            <!-- Event Poster -->
+            <div class="event-image">
+                <img src="images/event-poster.jpg" alt="Event Poster">
+            </div>
+
+            <!-- Event Details -->
+            <div class="event-details">
+
+                <h3>Event Name</h3>
+
+                <p class="event-date">
+                    📅 15 August 2025
+                </p>
+
+                <p class="event-description">
+                    Add a short description of your event here. Explain what
+                    participants can expect and why they should join.
+                </p>
+
+                <!-- Replace YOUR_EVENT_LINK_HERE -->
+                <a href="YOUR_EVENT_LINK_HERE" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!---------   EVENT JOURNEY SECTION      ------- -->
+    <section id="event-journey">
+        <div class="container">
+            
+            <!-- Context Header Blocks -->
+            <div class="text-center">
+                <h2 class="section-title">Event Journey</h2>
+                <p class="section-subtitle">Showcasing happened events from our campus chapter portfolio.</p>
+            </div>
+
+            <!-- Active Flex Layout Alignment Boundary Frame -->
+            <div class="event-grid">
+                
+                <!-- [Event Card 1] Always Visible Content Block -->
+                <div class="glass-card event-display-card">
+                    <div class="event-image-container">
+                        <img src="event1.jpg.png" alt="Event Photo" class="event-cover-img">
+                    </div>
+                    <div class="event-content-body">
+                        <span class="event-meta">📅 March 31, 2026 | 📍 Seminar Hall</span>
+                        <h3 class="event-title">Build With AI Workshop</h3>
+                        <p class="event-desc">An interactive, hands-on session where students explored modern artificial intelligence tools, learned prompt engineering basics, and built practical mini-projects to solve everyday problems.</p>
+                    </div>
+                </div>
+
+                <!-- [Event Card 2] Always Visible Content Block -->
+                <div class="glass-card event-display-card">
+                    <div class="event-image-container">
+                        <img src="event2.jpg.png" alt="Event Photo" class="event-cover-img">
+                    </div>
+                    <div class="event-content-body">
+                        <span class="event-meta">📅 February 26, 2026 | 📍 Seminar Hall</span>
+                        <h3 class="event-title">Code And Chaos Worshop</h3>
+                        <p class="event-desc">A fast-paced, hands-on workshop focused on unleashing creativity using AI. Students learned how to write effective prompts, explore smart tools, and build cool projects in real-time.</p>
+                    </div>
+                </div>
+
+                <!-- [Event Card 3] Initially Hidden Block -->
+                <div class="glass-card event-display-card hidden-card">
+                    <div class="event-image-container">
+                        <img src="event3.jpg.png" alt="IoT Workshop" class="event-cover-img">
+                    </div>
+                    <div class="event-content-body">
+                        <span class="event-meta">📅 February 8, 2026 | 📍 Programming Lab</span>
+                        <h3 class="event-title">IoT Worshop</h3>
+                        <p class="event-desc">A hands-on workshop where students explored smart devices, learned microcontroller basics, and connected hardware to the internet.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Button Component Layout Block -->
+            <div class="view-more-container">
+                <button id="toggle-events-btn" class="view-events-btn">View Full Events</button>
+            </div>
+
+        </div>
+    </section>
+   
+    <!-----------------   FOOTER SECTION  ------------------>
+ 
+    <footer class="footer">
+        <div class="footer-wrap">
+            <h1>µLearn VJCET</h1>
+            
+            <p>Reach us at <a href="mailto:mulearnvjcet@gmail.com">mulearnvjcet@gmail.com</a></p>
+            
+            <!-- Site Page Directory References -->
+            <div class="footer-links">
+                <a href="index.html">µLearn</a>
+                <a href="#event-journey">Events</a>
+                <a href="PASTE_GALLERY_LINK_HERE">Gallery</a>
+                <a href="PASTE_BRANDING_LINK_HERE">Branding</a>
+            </div>
+
+            <!-- Chapter Outbound Engagement Targets -->
+            <div class="socials">
+    <a href="https://www.linkedin.com/company/mulearn-vjcet/posts/?feedView=all" target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://www.instagram.com/mulearn.vjc?igsh=OXplejl6MzRoNGwz" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="PASTE_TWITTER_X_LINK_HERE" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+    <a href="PASTE_YOUTUBE_LINK_HERE" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+</div>
+
+            <hr>
+            <p class="copy">Copyright © 2026. All Rights Reserved. µLearn Foundation.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
