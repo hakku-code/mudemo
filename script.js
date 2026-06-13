@@ -274,3 +274,109 @@ async function loadStats(){
 }
 
 loadStats();
+
+/* =========================================
+   LEADERBOARD
+========================================= */
+
+async function loadLeaderboard(){
+
+    try{
+
+        const res = await fetch(WORKER_URL);
+        const json = await res.json();
+
+        const data = json.response || json;
+
+        const learners =
+            data.top_learners || [];
+
+        const top5 = [...learners]
+            .sort((a,b)=>b.karma-a.karma)
+            .slice(0,5);
+
+        const podium =
+            document.getElementById("podium");
+
+        const list =
+            document.getElementById("leaderboardList");
+
+        podium.innerHTML = "";
+        list.innerHTML = "";
+
+        const order = [1,0,2];
+
+        order.forEach((index,pos)=>{
+
+            const user = top5[index];
+
+            if(!user) return;
+
+            const card =
+            document.createElement("div");
+
+            card.className =
+                `podium-card ${
+                    pos===1 ? "first" : ""
+                }`;
+
+            card.innerHTML = `
+                <img
+                src="${user.profile_pic || 'https://via.placeholder.com/70'}"
+                class="podium-avatar">
+
+                <div class="podium-name">
+                    ${user.full_name}
+                </div>
+
+                <div class="podium-karma">
+                    ${user.karma}
+                </div>
+            `;
+
+            podium.appendChild(card);
+
+        });
+
+        top5.slice(3).forEach((user,i)=>{
+
+            const row =
+            document.createElement("div");
+
+            row.className = "lb-row";
+
+            row.innerHTML = `
+                <div class="lb-left">
+
+                    <span class="lb-rank">
+                        #${i+4}
+                    </span>
+
+                    <img
+                    src="${user.profile_pic || 'https://via.placeholder.com/45'}"
+                    class="lb-avatar">
+
+                    <span>
+                        ${user.full_name}
+                    </span>
+
+                </div>
+
+                <div class="lb-karma">
+                    ${user.karma}
+                </div>
+            `;
+
+            list.appendChild(row);
+
+        });
+
+    }catch(err){
+
+        console.log(err);
+
+    }
+
+}
+
+loadLeaderboard();
