@@ -48,19 +48,9 @@ const eventDateText = document.getElementById("eventDateText");
 
 /* 🔵 ADD ANY EVENT DATES HERE */
 const eventDates = {
-    "2026-06-09": {
-        title: "Build With AI Workshop",
-        date: "9 June 2026"
-    },
-
-    "2026-06-15": {
-        title: "Community Meetup",
-        date: "15 June 2026"
-    },
-
-    "2026-06-25": {
-        title: "IoT Workshop",
-        date: "25 June 2026"
+    "2026-06-16": {
+        title: "6 Game-Changing AI Tools in 60 Minutes",
+        date: "16 June 2026"
     }
 };
 
@@ -142,3 +132,145 @@ document.getElementById("next").onclick = ()=>{
 };
 
 renderCalendar(current);
+
+/* =========================================
+   GALLERY MODAL
+========================================= */
+
+const galleryModal = document.getElementById("galleryModal");
+const openGalleryBtn = document.getElementById("openGalleryBtn");
+const closeGalleryBtn = document.getElementById("closeGalleryBtn");
+
+if(openGalleryBtn){
+
+    openGalleryBtn.addEventListener("click", () => {
+
+        galleryModal.classList.add("active");
+
+        document.body.classList.add("modal-open");
+
+    });
+
+}
+
+if(closeGalleryBtn){
+
+    closeGalleryBtn.addEventListener("click", () => {
+
+        galleryModal.classList.remove("active");
+
+        document.body.classList.remove("modal-open");
+
+    });
+
+}
+
+galleryModal?.addEventListener("click", (e) => {
+
+    if(e.target === galleryModal){
+
+        galleryModal.classList.remove("active");
+
+        document.body.classList.remove("modal-open");
+
+    }
+
+});
+
+document.addEventListener("keydown", (e) => {
+
+    if(e.key === "Escape"){
+
+        galleryModal.classList.remove("active");
+
+        document.body.classList.remove("modal-open");
+
+    }
+
+});
+
+/* =========================================
+   ABOUT US
+========================================= */
+const aboutText = document.getElementById("aboutText");
+const readMoreBtn = document.getElementById("readMoreBtn");
+
+readMoreBtn.addEventListener("click", () => {
+    aboutText.classList.toggle("expanded");
+
+    if (aboutText.classList.contains("expanded")) {
+        readMoreBtn.textContent = "Read Less";
+    } else {
+        readMoreBtn.textContent = "Read More";
+    }
+});
+
+
+/* =========================================
+   UNDERLINE ACTIVE NAV LINK ON SCROLL
+========================================= */
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.offsetHeight;
+
+        if (window.scrollY >= sectionTop &&
+            window.scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === `#${current}`) {
+            link.classList.add("active");
+        }
+    });
+});
+
+/* =========================================
+   OUR STATISTICS
+========================================= */
+
+const WORKER_URL =
+"https://flat-cherry-7f84.cherrylily91.workers.dev/";
+
+async function loadStats(){
+
+    try{
+
+        const res = await fetch(WORKER_URL);
+        const json = await res.json();
+
+        const data = json.response || json;
+
+        document.getElementById("studentsCount").textContent =
+            data.campus_details?.total_members || 0;
+
+        document.getElementById("igCount").textContent =
+            data.ig_details?.length || 0;
+
+        document.getElementById("activeCount").textContent =
+            data.campus_details?.active_members || 0;
+
+        document.getElementById("karmaCount").textContent =
+            data.campus_details?.total_karma || 0;
+
+        document.getElementById("rankText").textContent =
+            "Rank: " + (data.campus_details?.rank || "—");
+
+    }catch(err){
+
+        console.error("Stats loading failed", err);
+
+    }
+
+}
+
+loadStats();
