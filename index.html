@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VJCET μLearn</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="images/mulearn-vjcet-logo.png" alt="VJCET μLearn Logo">
+            </a>
+
+            <!-- Right Side Content -->
+            <div class="nav-right">
+
+                <!-- Desktop Menu -->
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+
+                <!-- Join Button -->
+                <a href="https://app.mulearn.org/register" class="join-btn">
+                    Join μLearn
+                </a>
+
+                <!-- Hamburger -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="#home" class="mobile-home">Home</a>
+
+            <div class="mobile-line"></div>
+
+            <li><a href="#events">Events</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#connect">Connect</a></li>
+
+            <a href="https://app.mulearn.org/register" class="mobile-join">
+                Join μLearn
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                Welcome to
+                <span>μLearn VJCET</span>
+            </h1>
+
+            <p>
+                Learn • Connect • Build • Grow
+            </p>
+            <a href="https://chat.whatsapp.com/HdApp4b2ghK9tNvXsVDHcT" class="hero-btn">
+    Join Community
+</a>
+        </div>
+
+        <div class="mini-calendar">
+            <h3 class="calendar-title">Event Calendar</h3>
+    <div class="cal-header">
+        <button id="prev">&#10094;</button>
+        <span id="monthTitle"></span>
+        <button id="next">&#10095;</button>
+    </div>
+
+<div class="cal-weekdays">
+    <div class="sunday">Su</div>
+    <div>M</div>
+    <div>T</div>
+    <div>W</div>
+    <div>Th</div>
+    <div>F</div>
+    <div>S</div>
+</div>
+
+    <div class="cal-grid" id="calDays"></div>
+
+    <div class="event-box" id="eventBox">
+        <h4 id="eventTitle"></h4>
+        <p>📅 <span id="eventDateText"></span></p>
+        <a href="#events" class="go-btn">Go To Event</a>
+    </div>
+</div>
+
+</div>
+
+    </section>
+
+    <!-- UPCOMING EVENTS SECTION -->
+<section class="upcoming-events" id="events">
+
+    <div class="events-container">
+
+        <h2>Upcoming Events</h2>
+
+        <div class="event-card">
+
+            <!-- Event Poster -->
+            <div class="event-image">
+                <img src="images/ad_poster.jpg" alt="Event Poster">
+            </div>
+
+            <!-- Event Details -->
+            <div class="event-details">
+
+                <h3>6 Game-Changing AI Tools in 60 Minutes</h3>
+
+                <p class="event-date">
+                    📅 16 June 2026
+                </p>
+
+                <p class="event-description">
+                    These aren't the usual tools like ChatGPT or Gemini. We'll be exploring some lesser-known AI tools that can help with design, research,productivity, and content creation.We'll do live demos and keep everything beginner-friendly, so anyone can join!
+🎙️ Speaker: Noah Biju, AI IG Lead
+                </p>
+
+                <!-- Replace YOUR_EVENT_LINK_HERE -->
+                <a href="https://forms.gle/WRQ4mvs7nABZzKE76" class="book-btn">
+                    Book Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+<!-- ABOUT US -->
+<section class="about-section" id="about">
+    <h2>About Us</h2>
+
+    <p id="aboutText" class="about-text">
+µLearn VJCET is the official µLearn campus community of Viswajyothi College of Engineering and Technology (VJCET),established in August 2025.Founded with the vision of creating a vibrant learning ecosystem,the chapter was introduced to the campus through the efforts of Mr.Roshan Johnson (2025 Campus Lead) and the staff advisor (Staff advisor name).
+We are a student-driven community dedicated to promoting peer-to-peer learning,innovation,collaboration,and skill development.Through workshops,hackathons,learning circles,mentorship programs,and community initiatives,we provide students with opportunities to explore technology,build meaningful projects,and develop industry-relevant skills.
+At µLearn VJCET,we believe that learning extends beyond classrooms.Our mission is to cultivate a culture where students learn together,share knowledge,support one another,and grow into future-ready professionals.By connecting learners,mentors,and industry experts,we strive to empower every student to unlock their full potential and contribute positively to the tech community.
+    </p>
+
+    <a id="readMoreBtn" class="read-more">Read More</a>
+</section>
+
+<!-- MAKER OF THE MONTH -->
+<section class="maker-section">
+
+    <h2 class="maker-title">🏆 Maker of the Month</h2>
+
+    <div class="top-makers">
+
+        <!-- Rank 1 -->
+        <div class="maker-card rank-1">
+            <div class="profile-pic"></div>
+            <div class="rank-badge">1</div>
+            <div class="trophy">🏆</div>
+            <div class="name">John Doe</div>
+            <div class="email">john@gmail.com</div>
+            <div class="karma">1500 Karma</div>
+        </div>
+
+        <!-- Rank 2 -->
+        <div class="maker-card rank-2">
+            <div class="profile-pic"></div>
+            <div class="rank-badge">2</div>
+            <div class="trophy">⭐</div>
+            <div class="name">Jane</div>
+            <div class="email">jane@gmail.com</div>
+            <div class="karma">1200 Karma</div>
+        </div>
+
+        <!-- Rank 3 -->
+        <div class="maker-card rank-3">
+            <div class="profile-pic"></div>
+            <div class="rank-badge">3</div>
+            <div class="trophy">🏅</div>
+            <div class="name">Alex</div>
+            <div class="email">alex@gmail.com</div>
+            <div class="karma">1000 Karma</div>
+        </div>
+
+    </div>
+
+</section>
+
+    <!---------   EVENT JOURNEY SECTION      ------- -->
+    <section id="event-journey">
+        <div class="container">
+            
+            <!-- Context Header Blocks -->
+            <div class="text-center">
+                <h2 class="section-title">Event Journey</h2>
+                <p class="section-subtitle">Showcasing happened events from our campus chapter portfolio.</p>
+            </div>
+
+            <!-- Active Flex Layout Alignment Boundary Frame -->
+            <div class="event-grid">
+                
+                <!-- [Event Card 1] Always Visible Content Block -->
+                <div class="glass-card event-display-card">
+                    <div class="event-image-container">
+                        <img src="event1.jpg.png" alt="Event Photo" class="event-cover-img">
+                    </div>
+                    <div class="event-content-body">
+                        <span class="event-meta">📅 March 31, 2026 | 📍 Seminar Hall</span>
+                        <h3 class="event-title">Build With AI Workshop</h3>
+                        <p class="event-desc">An interactive, hands-on session where students explored modern artificial intelligence tools, learned prompt engineering basics, and built practical mini-projects to solve everyday problems.</p>
+                    </div>
+                </div>
+
+                <!-- [Event Card 2] Always Visible Content Block -->
+                <div class="glass-card event-display-card">
+                    <div class="event-image-container">
+                        <img src="event2.jpg.png" alt="Event Photo" class="event-cover-img">
+                    </div>
+                    <div class="event-content-body">
+                        <span class="event-meta">📅 February 26, 2026 | 📍 Seminar Hall</span>
+                        <h3 class="event-title">Code And Chaos Worshop</h3>
+                        <p class="event-desc">A fast-paced, hands-on workshop focused on unleashing creativity using AI. Students learned how to write effective prompts, explore smart tools, and build cool projects in real-time.</p>
+                    </div>
+                </div>
+
+                <!-- [Event Card 3] Initially Hidden Block -->
+                <div class="glass-card event-display-card hidden-card">
+                    <div class="event-image-container">
+                        <img src="event3.jpg.png" alt="IoT Workshop" class="event-cover-img">
+                    </div>
+                    <div class="event-content-body">
+                        <span class="event-meta">📅 February 8, 2026 | 📍 Programming Lab</span>
+                        <h3 class="event-title">IoT Worshop</h3>
+                        <p class="event-desc">A hands-on workshop where students explored smart devices, learned microcontroller basics, and connected hardware to the internet.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Button Component Layout Block -->
+            <div class="view-more-container">
+                <button id="toggle-events-btn" class="view-events-btn">View Full Events</button>
+            </div>
+
+        </div>
+    </section>
+
+<!-----------------   GALLERY SECTION  ------------------>
+<section class="gallery-section" id="gallery">
+    <h2>Memories</h2>
+
+    <!-- Row 1 -->
+    <div class="gallery-row">
+        <div class="gallery-track">
+
+            <div class="photo-card"><img src="images/workshop1.jpg" alt="Workshop 1"></div>
+            <div class="photo-card"><img src="images/workshop2.jpg" alt="Workshop 2"></div>
+            <div class="photo-card"><img src="images/workshop3.jpg" alt="Workshop 3"></div>
+            <div class="photo-card"><img src="images/workshop4.jpg" alt="Workshop 4"></div>
+            <div class="photo-card"><img src="images/workshop5.jpg" alt="Workshop 5"></div>
+            <div class="photo-card"><img src="images/workshop6.jpg" alt="Workshop 6"></div>
+            <div class="photo-card"><img src="images/workshop7.jpg" alt="Workshop 7"></div>
+            <div class="photo-card"><img src="images/workshop8.jpg" alt="Workshop 8"></div>
+            <div class="photo-card"><img src="images/workshop9.jpg" alt="Workshop 9"></div>
+            <div class="photo-card"><img src="images/workshop10.jpg" alt="Workshop 10"></div>
+
+            <!-- Duplicate for smooth sliding -->
+            <div class="photo-card"><img src="images/workshop1.jpg" alt="Workshop 1"></div>
+            <div class="photo-card"><img src="images/workshop2.jpg" alt="Workshop 2"></div>
+            <div class="photo-card"><img src="images/workshop3.jpg" alt="Workshop 3"></div>
+            <div class="photo-card"><img src="images/workshop4.jpg" alt="Workshop 4"></div>
+            <div class="photo-card"><img src="images/workshop5.jpg" alt="Workshop 5"></div>
+            <div class="photo-card"><img src="images/workshop6.jpg" alt="Workshop 6"></div>
+            <div class="photo-card"><img src="images/workshop7.jpg" alt="Workshop 7"></div>
+            <div class="photo-card"><img src="images/workshop8.jpg" alt="Workshop 8"></div>
+            <div class="photo-card"><img src="images/workshop9.jpg" alt="Workshop 9"></div>
+            <div class="photo-card"><img src="images/workshop10.jpg" alt="Workshop 10"></div>
+
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="gallery-row reverse">
+        <div class="gallery-track">
+
+            <div class="photo-card"><img src="images/workshop11.jpg" alt="Workshop 11"></div>
+            <div class="photo-card"><img src="images/workshop12.jpg" alt="Workshop 12"></div>
+            <div class="photo-card"><img src="images/workshop13.jpg" alt="Workshop 13"></div>
+            <div class="photo-card"><img src="images/workshop14.jpg" alt="Workshop 14"></div>
+            <div class="photo-card"><img src="images/workshop15.jpg" alt="Workshop 15"></div>
+            <div class="photo-card"><img src="images/workshop16.jpg" alt="Workshop 16"></div>
+            <div class="photo-card"><img src="images/workshop17.jpg" alt="Workshop 17"></div>
+            <div class="photo-card"><img src="images/workshop18.jpg" alt="Workshop 18"></div>
+            <div class="photo-card"><img src="images/workshop19.jpg" alt="Workshop 19"></div>
+            <div class="photo-card"><img src="images/workshop20.jpg" alt="Workshop 20"></div>
+
+            <!-- Duplicate for smooth sliding -->
+            <div class="photo-card"><img src="images/workshop11.jpg" alt="Workshop 11"></div>
+            <div class="photo-card"><img src="images/workshop12.jpg" alt="Workshop 12"></div>
+            <div class="photo-card"><img src="images/workshop13.jpg" alt="Workshop 13"></div>
+            <div class="photo-card"><img src="images/workshop14.jpg" alt="Workshop 14"></div>
+            <div class="photo-card"><img src="images/workshop15.jpg" alt="Workshop 15"></div>
+            <div class="photo-card"><img src="images/workshop16.jpg" alt="Workshop 16"></div>
+            <div class="photo-card"><img src="images/workshop17.jpg" alt="Workshop 17"></div>
+            <div class="photo-card"><img src="images/workshop18.jpg" alt="Workshop 18"></div>
+            <div class="photo-card"><img src="images/workshop19.jpg" alt="Workshop 19"></div>
+            <div class="photo-card"><img src="images/workshop20.jpg" alt="Workshop 20"></div>
+
+        </div>
+    </div>
+
+    <!-- View All Gallery Button -->
+    <div class="gallery-btn-container">
+        <button class="view-gallery-btn" id="openGalleryBtn">
+    View All Gallery →
+</button>
+    </div>
+</section>
+
+<!-- FULLSCREEN GALLERY MODAL -->
+<div class="gallery-modal" id="galleryModal">
+
+    <span class="close-gallery" id="closeGalleryBtn">&times;</span>
+
+    <div class="gallery-modal-content">
+
+        <img src="images/workshop1.jpg" alt="">
+        <img src="images/workshop2.jpg" alt="">
+        <img src="images/workshop3.jpg" alt="">
+        <img src="images/workshop4.jpg" alt="">
+        <img src="images/workshop5.jpg" alt="">
+        <img src="images/workshop6.jpg" alt="">
+        <img src="images/workshop7.jpg" alt="">
+        <img src="images/workshop8.jpg" alt="">
+        <img src="images/workshop9.jpg" alt="">
+        <img src="images/workshop10.jpg" alt="">
+
+        <img src="images/workshop11.jpg" alt="">
+        <img src="images/workshop12.jpg" alt="">
+        <img src="images/workshop13.jpg" alt="">
+        <img src="images/workshop14.jpg" alt="">
+        <img src="images/workshop15.jpg" alt="">
+        <img src="images/workshop16.jpg" alt="">
+        <img src="images/workshop17.jpg" alt="">
+        <img src="images/workshop18.jpg" alt="">
+        <img src="images/workshop19.jpg" alt="">
+        <img src="images/workshop20.jpg" alt="">
+
+    </div>
+
+</div>
+
+<!-- LEAD STATS SECTION -->
+<section class="stats-section" id="stats">
+
+    <h2 class="stats-title">Our Statistics</h2>
+
+    <div class="stats-band">
+
+        <div class="stats-row">
+
+            <div class="stat-item">
+                <div class="stat-num" id="studentsCount">0</div>
+                <div class="stat-label">Students<br>Enrolled</div>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-item">
+                <div class="stat-num" id="igCount">0</div>
+                <div class="stat-label">Interest<br>Groups</div>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-item">
+                <div class="stat-num" id="activeCount">0</div>
+                <div class="stat-label">Active<br>Members</div>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-item">
+                <div class="stat-num" id="karmaCount">0</div>
+                <div class="stat-label">Karma<br>Mined</div>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-item rank-item">
+                <span class="mu-logo-text">µlearn</span>
+                <span class="rank-num-text" id="rankText">Rank: —</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- LEADERBOARD -->
+<section class="leaderboard-section">
+
+    <h2 class="leaderboard-title">Leaderboard</h2>
+
+    <div class="podium" id="podium"></div>
+
+    <div class="leaderboard-list" id="leaderboardList"></div>
+
+</section>
+
+<!-----------------   EXECOM SECTION  ------------------>
+
+    <section class="execom-section">
+    <h2>Our Execom Team</h2>
+
+    <div class="execom-grid">
+
+         <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>STAFF NAME</h3>
+            <p>STAFF ADVISOR</p>
+            <div class="social-links">
+                <a href=PASTE_LINK_HERE target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href=PASTE_LINK_HERE target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>AJU ELDO</h3>
+            <p>Campus Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/aju-eldo" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/aju_eldo_" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>THARUN TOMY</h3>
+            <p>Co Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tharuntomy06" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/tharun.tomy" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>LIVIA JAIN</h3>
+            <p>Management Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/livia-jain-751b2a349" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/liviajain" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>STEVEN JOSE PREETH</h3>
+            <p>Cultural Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/steven-preeth-304405318" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/_steven.x_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>ASHNA RAFEEK</h3>
+            <p>Content Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ashnarafeek" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/4s1na" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>M S GIRIBHASKAR</h3>
+            <p>Creative Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/m-s-giribhaskar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/__giribhaskar__" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>MATHEWS SAJI</h3>
+            <p>Design Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mathews-saji-53825a2b9" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/mathewssaji_mangalathu" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>ADARSH NAIJO</h3>
+            <p>Tech Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/adarsh-naijo-53b12238b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/adarsh_naijo" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>ANNA JOBY</h3>
+            <p>Marketing Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/anna-joby-09bb83336" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/anna__joby" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>ABHINAV SAJEEVAN</h3>
+            <p>Media Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/abhinav-sajeevan-759a43330" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/abhinav_.59" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>P M ABDULHAKK</h3>
+            <p>Web IG Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/p-m-abdulhakk-b3b65433b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/haakkkku" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="member-card">
+    	<div class="photo-space"></div>
+    	<h3>ALAN LAIJU</h3>
+    	<p>Strategic Leadership IG Lead</p>
+    	<div class="social-links">
+        	<a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        	<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    	</div>
+	</div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>NOAH BIJU</h3>
+            <p>AI IG Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/noah-biju" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>CHRIS GEORGE RAIN</h3>
+            <p>HR IG Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/chris-george-rain-aa201337b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/chr_lz_" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>JISSO RAJU</h3>
+            <p>IoT IG Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/jisso-raju-3a3279388" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/rajujisso" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>BENEDICT CHACKO MATHEW</h3>
+            <p>Cyber Security IG Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/benedict-chacko" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/benedict.chacko" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>GEORGE RAJU</h3>
+            <p>Cyber Security IG Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/05georgeraju" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/__george__raju" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+    	<div class="photo-space"></div>
+    	<h3>ANANYA PILLAI B</h3>
+    	<p>Data Science IG Lead</p>
+    	<div class="social-links">
+        	<a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        	<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    	</div>
+	</div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>DAVID MANI</h3>
+            <p>UI/UX IG Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/davidmani" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/davidmani_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="photo-space"></div>
+            <h3>EDWIN NOBY</h3>
+            <p>Comics IG Lead</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/edwin-noby-071295331" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/edwin._.noby" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-----------------   CONNECT SECTION  ------------------>
+<section class="connect-section" id="connect">
+    <h2 class="connect-title">Connect With Us</h2>
+
+    <div class="connect-card">
+
+        <!-- Left Content -->
+        <div class="connect-content">
+            <h3>Get In Touch With μLearn VJCET!</h3>
+
+            <p>
+                Have any questions or need assistance?
+                Feel free to contact us and stay updated with
+                all μLearn VJCET activities.
+            </p>
+
+            <div class="connect-buttons">
+                <a href="https://chat.whatsapp.com/L3s4aEr9t2bGdra774w9j2" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    Join Whatsapp
+                </a>
+
+                <a href="tel:+919539756010" class="contact-btn">
+                    <i class="fas fa-phone"></i>
+                    Contact Us
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="connect-image">
+            <img src="images/lion.png" alt="Connect Illustration">
+        </div>
+
+    </div>
+</section>
+
+    <!-----------------   FOOTER SECTION  ------------------>
+ 
+    <footer class="footer">
+        <div class="footer-wrap">
+            <h1>µLearn VJCET</h1>
+            
+            <p>Reach us at <a href="mailto:mulearnvjcet@gmail.com">mulearnvjcet@gmail.com</a></p>
+            
+            <!-- Site Page Directory References -->
+            <div class="footer-links">
+                <a href="index.html">µLearn</a>
+                <a href="#event-journey">Events</a>
+                <a href="PASTE_GALLERY_LINK_HERE">Gallery</a>
+                <a href="PASTE_BRANDING_LINK_HERE">Branding</a>
+            </div>
+
+            <!-- Chapter Outbound Engagement Targets -->
+            <div class="socials">
+    <a href="https://www.linkedin.com/company/mulearn-vjcet/posts/?feedView=all" target="_blank">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://www.instagram.com/mulearn.vjc?igsh=OXplejl6MzRoNGwz" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="PASTE_TWITTER_X_LINK_HERE" target="_blank">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+    <a href="PASTE_YOUTUBE_LINK_HERE" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+</div>
+
+            <hr>
+            <p class="copy">Copyright © 2026. All Rights Reserved. µLearn Foundation.</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
